@@ -1,5 +1,6 @@
 import { StyledAboutSection } from '../../styles/About/AboutLayout/StyledAboutLayout';
 import { StyledAboutTextContainer } from '../../styles/About/AboutText/StyledAboutTextContainer';
+import { StyledAboutPortrait } from '../../styles/About/AboutText/StyledAboutPortrait';
 import {
   StyledTimelineContainer,
   StyledTimeline,
@@ -60,6 +61,16 @@ const About = () => {
           viewport={{ once: true }}
           variants={picturesTextVariants}
         >
+          <StyledAboutPortrait>
+            <source type='image/webp' srcSet='/rasters/daiki-yamamoto.webp' />
+            <img
+              src='/rasters/daiki-yamamoto.webp'
+              alt={t('portrait-alt')}
+              width='800'
+              height='800'
+              loading='lazy'
+            />
+          </StyledAboutPortrait>
           <p>{t('about-text-top')}</p>
           <p>{t('about-text-bottom')}</p>
         </StyledAboutTextContainer>

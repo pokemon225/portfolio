@@ -9,6 +9,7 @@
   "resume-btn": "resume",
   "about-heading": "about me",
   "about-text-top": "I'm Daiki, a senior AI/ML engineer at CyberAgent in Tokyo. I've spent 9+ years building production machine learning for e-commerce, fintech, and enterprise services, from high-throughput recommendation and real-time inference infrastructure to the feature stores, retraining pipelines, and A/B testing frameworks that keep models healthy after launch.",
+  "portrait-alt": "Portrait of Daiki Yamamoto",
   "about-text-bottom": "Before CyberAgent, I built bilingual NLP, document-intelligence, and automation systems at Embarc, and delivered ML solutions across healthcare, energy, agriculture, banking, and retail at Computools. I work fluently in Japanese and English, and I enjoy leading cross-functional teams and mentoring engineers through their first production ML deployments.",
   "experience-heading": "experience",
   "education-heading": "education",

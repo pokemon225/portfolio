@@ -43,8 +43,8 @@ export const StyledAboutSection = styled.section`
       css`
         background-image: linear-gradient(
             to bottom,
-            rgba(207, 215, 225, 1) 15%,
-            rgba(40, 62, 81, 0.7),
+            rgba(207, 215, 225, 1) 0%,
+            rgba(40, 62, 81, 0.85) 6%,
             rgba(40, 62, 81, 0.9),
             rgba(40, 62, 81, 1)
           ),
