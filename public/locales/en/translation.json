@@ -48,6 +48,7 @@
   "technology-heading": "technology",
   "skill-categories": {
     "ml": "Machine Learning & AI",
+    "agentic": "Agentic AI",
     "frameworks": "Frameworks & Libraries",
     "mlops": "MLOps & Model Lifecycle",
     "serving": "Serving & Infrastructure",

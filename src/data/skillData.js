@@ -17,6 +17,21 @@ export const skillData = [
     ],
   },
   {
+    key: 'agentic',
+    skills: [
+      'Autonomous & Workflow Agents',
+      'Agent Orchestration',
+      'Tool Calling',
+      'LangChain',
+      'Retrieval-Augmented Generation',
+      'Vector Search',
+      'Citation-Grounded Answers',
+      'Agent Evaluation Pipelines',
+      'Prompt Engineering',
+      'On-Premise LLM Deployment',
+    ],
+  },
+  {
     key: 'frameworks',
     skills: [
       'Python',

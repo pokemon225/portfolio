@@ -48,6 +48,7 @@
   "technology-heading": "テクノロジー",
   "skill-categories": {
     "ml": "機械学習・AI",
+    "agentic": "エージェント型AI",
     "frameworks": "フレームワーク・ライブラリ",
     "mlops": "MLOps・モデルライフサイクル",
     "serving": "サービング・インフラ",
