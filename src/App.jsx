@@ -10,6 +10,7 @@ import Navigation from './components/Navigation/Navigation';
 import ProjectGallery from './components/AdditionalProjects/ProjectGallery';
 import { useGlobalContext } from './Context/Context';
 import Footer from './components/Footer/Footer';
+import SakuraTrail from './components/UI/SakuraTrail';
 
 function App() {
   const { theme } = useGlobalContext();
@@ -34,6 +35,7 @@ function App() {
         <ProjectGallery />
       </main>
       <Footer />
+      <SakuraTrail />
     </ThemeProvider>
   );
 }
