@@ -1,0 +1,199 @@
+{
+  "app-title": "Home | Daiki Yamamoto • Machine Learning Engineer",
+  "loading": "Loading...",
+  "greetings": "Hi there, I'm ",
+  "name": "Daiki",
+  "name-end": ".",
+  "sub-heading": "I build machine learning systems that hold up in production.",
+  "more-info": "I'm a Senior Machine Learning Engineer based in Tokyo with 9+ years of experience designing, deploying, and scaling production ML: real-time inference, recommendation and bidding systems, and the MLOps platforms that keep models performing.",
+  "resume-btn": "resume",
+  "about-heading": "about me",
+  "about-text-top": "I'm Daiki, a senior AI/ML engineer at CyberAgent in Tokyo. I've spent 9+ years building production machine learning for e-commerce, fintech, and enterprise services, from high-throughput recommendation and real-time inference infrastructure to the feature stores, retraining pipelines, and A/B testing frameworks that keep models healthy after launch.",
+  "about-text-bottom": "Before CyberAgent, I built bilingual NLP, document-intelligence, and automation systems at Embarc, and delivered ML solutions across healthcare, energy, agriculture, banking, and retail at Computools. I work fluently in Japanese and English, and I enjoy leading cross-functional teams and mentoring engineers through their first production ML deployments.",
+  "experience-heading": "experience",
+  "education-heading": "education",
+  "experience": [
+    {
+      "role": "Senior AI/ML Engineer",
+      "company": "CyberAgent, Inc.",
+      "location": "Tokyo",
+      "period": "Sep 2023 – Present"
+    },
+    {
+      "role": "Machine Learning Engineer",
+      "company": "Embarc",
+      "location": "Yokohama",
+      "period": "Jun 2020 – Sep 2023"
+    },
+    {
+      "role": "AI Engineer",
+      "company": "Computools",
+      "location": "Nagoya",
+      "period": "Apr 2017 – Jun 2020"
+    }
+  ],
+  "education": [
+    {
+      "role": "Master of Computer Science",
+      "company": "Tokyo University",
+      "period": "2016 – 2017"
+    },
+    {
+      "role": "Bachelor of Computer Science",
+      "company": "Tokyo University",
+      "period": "2012 – 2016"
+    }
+  ],
+  "technology-heading": "technology",
+  "skill-categories": {
+    "ml": "Machine Learning & AI",
+    "frameworks": "Frameworks & Libraries",
+    "mlops": "MLOps & Model Lifecycle",
+    "serving": "Serving & Infrastructure",
+    "cloud": "Cloud Platforms",
+    "data": "Data Engineering"
+  },
+  "projects-heading": "projects",
+  "projects": [
+    {
+      "id": 1,
+      "period": "2023 – Present",
+      "description": "Led backend development for an internet advertising stack, architecting real-time bidding infrastructure that sustains tens of millions of daily ad impressions within strict low-latency SLAs, a core layer of an integrated AI solution for digital marketing.",
+      "highlights": [
+        "Tens of millions of daily ad impressions in production",
+        "Low-latency bid and auction workloads for digital marketing at scale"
+      ]
+    },
+    {
+      "id": 2,
+      "period": "2023 – Present",
+      "description": "Built and operated ML platforms for ad performance prediction and bid optimization, enabling sub-10ms online inference for CTR/CVR models at scale. Supports AI-driven marketing workflows, from performance forecasting to automated model lifecycle management via MLOps.",
+      "highlights": [
+        "Sub-10ms online inference for CTR/CVR prediction at scale",
+        "End-to-end MLOps with feature stores and continuous retraining"
+      ]
+    },
+    {
+      "id": 3,
+      "period": "2023 – Present",
+      "description": "Contributed to an AI agent platform that lets businesses build, test, and deploy autonomous and workflow-based AI agents tailored to their operations. Supported production infrastructure for agent orchestration, evaluation pipelines, and reliable deployment of client-specific AI workflows.",
+      "highlights": [
+        "Build-test-deploy lifecycle for workflow-based AI agents",
+        "Production infrastructure for autonomous agent orchestration"
+      ]
+    },
+    {
+      "id": 4,
+      "period": "8-week engagement",
+      "description": "Delivered a retrieval-augmented compliance agent for the nuclear domain, replacing a manual, engineer-hours-intensive review of reactor design basis documentation against NRC regulations and industry codes. The system maps each design parameter to the applicable regulatory clause and returns auditable determinations with direct citations, deployed on-premise to meet data-sensitivity constraints.",
+      "highlights": [
+        "Automated NRC and industry-code review with clause-level citations",
+        "On-premise RAG pipeline for sensitive nuclear design documentation"
+      ]
+    },
+    {
+      "id": 5,
+      "period": "2023",
+      "description": "Re-architected a digital marketing data ingestion pipeline, cutting processing latency by 55% across batch and streaming workloads and improving data freshness for downstream AI modeling and analytics.",
+      "highlights": [
+        "Reduced end-to-end processing latency by 55%",
+        "Improved data freshness for analytics and model training"
+      ]
+    },
+    {
+      "id": 6,
+      "period": "2023 – 2024",
+      "description": "Drove the migration from on-premise infrastructure to a Kubernetes-based cloud architecture, establishing a scalable, containerized platform for data-intensive ML workloads with improved deployment velocity and observability.",
+      "highlights": [
+        "Scalable containerized platform for data-intensive ML workloads",
+        "Faster, safer deployments with standardized observability"
+      ]
+    },
+    {
+      "id": 7,
+      "period": "2020 – 2023",
+      "description": "Developed NLP models supporting bilingual Japanese–English business communication and translation, enabling smooth collaboration between international clients and their Japanese partners.",
+      "highlights": [
+        "Japanese–English NLP for business communication",
+        "Built with operations, translation, and consulting teams"
+      ]
+    },
+    {
+      "id": 8,
+      "period": "2020 – 2023",
+      "description": "Designed intelligent document processing systems combining OCR and NLP to automate corporate incorporation documentation and regulatory compliance workflows.",
+      "highlights": [
+        "OCR + NLP for incorporation documents",
+        "Automated regulatory compliance workflows"
+      ]
+    },
+    {
+      "id": 9,
+      "period": "2020 – 2023",
+      "description": "Built ML pipelines that automated accounting coordination, payroll administration, and bookkeeping for enterprise clients, reducing manual workload and improving accuracy.",
+      "highlights": [
+        "Accounting, payroll, and bookkeeping automation",
+        "Less manual work and higher accuracy for enterprise clients"
+      ]
+    },
+    {
+      "id": 10,
+      "period": "2020 – 2023",
+      "description": "Deployed chatbot and intelligent routing solutions for online customer support, improving response times and client satisfaction.",
+      "highlights": [
+        "Automated triage and routing of support requests",
+        "Faster response times and higher client satisfaction"
+      ]
+    },
+    {
+      "id": 11,
+      "period": "2017 – 2020",
+      "description": "Built predictive analytics features for digital banking and point-of-sale platforms that contributed to a 25% increase in client retail sales.",
+      "highlights": [
+        "Contributed to a 25% increase in client retail sales",
+        "Predictive features for digital banking and POS"
+      ]
+    },
+    {
+      "id": 12,
+      "period": "2017 – 2020",
+      "description": "Enhanced an IoT platform with AI capabilities for real-time printer monitoring and automated consumables replenishment.",
+      "highlights": [
+        "Real-time monitoring across connected printers",
+        "Automated consumables replenishment"
+      ]
+    },
+    {
+      "id": 13,
+      "period": "2017 – 2020",
+      "description": "Developed machine learning models for client solutions including hospital RFID equipment tracking, energy-sector drone analytics, and AI-based agricultural monitoring, deployed on AWS, Azure, and GCP for enterprise and mid-market clients.",
+      "highlights": [
+        "Gains in tracking speed, uptime, and productivity",
+        "Multi-cloud delivery across AWS, Azure, and GCP"
+      ]
+    }
+  ],
+  "show-more-btn": "show more",
+  "show-less-btn": "show less",
+  "learn-more": "more info",
+  "navigation": [
+    {
+      "menuTitle": "home",
+      "href": "/#home"
+    },
+    {
+      "menuTitle": "about",
+      "href": "/#about"
+    },
+    {
+      "menuTitle": "technology",
+      "href": "/#technology"
+    },
+    {
+      "menuTitle": "projects",
+      "href": "/#projects"
+    }
+  ],
+  "footer-contact": "e-mail",
+  "footer-message": "Website by Daiki Yamamoto"
+}

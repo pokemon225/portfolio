@@ -1,0 +1,80 @@
+// Group titles are translated under "skill-categories" using each group's key.
+export const skillData = [
+  {
+    key: 'ml',
+    skills: [
+      'Recommendation Systems',
+      'Learning-to-Rank',
+      'Demand Forecasting',
+      'Dynamic Pricing',
+      'Customer Behavior Modeling',
+      'Anomaly & Fraud Detection',
+      'Natural Language Processing',
+      'LLMs & RAG',
+      'Computer Vision',
+      'OCR & Document Processing',
+      'Predictive Analytics',
+    ],
+  },
+  {
+    key: 'frameworks',
+    skills: [
+      'Python',
+      'PyTorch',
+      'TensorFlow',
+      'scikit-learn',
+      'XGBoost / LightGBM',
+      'Hugging Face Transformers',
+      'spaCy',
+      'OpenCV',
+      'pandas',
+      'NumPy',
+    ],
+  },
+  {
+    key: 'mlops',
+    skills: [
+      'Feast / SageMaker Feature Store',
+      'MLflow',
+      'Kubeflow',
+      'Model Registry & Versioning',
+      'Automated Retraining',
+      'A/B Testing',
+      'Monitoring & Drift Detection',
+      'CI/CD for ML',
+    ],
+  },
+  {
+    key: 'serving',
+    skills: [
+      'Low-Latency Inference',
+      'Kubernetes',
+      'Docker',
+      'Helm',
+      'TorchServe / Triton',
+      'FastAPI',
+      'REST & gRPC',
+      'Microservices',
+    ],
+  },
+  {
+    key: 'cloud',
+    skills: [
+      'AWS (SageMaker, EKS, Lambda, S3, Redshift)',
+      'Azure (Azure ML, AKS)',
+      'GCP (Vertex AI, GKE, BigQuery)',
+    ],
+  },
+  {
+    key: 'data',
+    skills: [
+      'Apache Spark',
+      'Apache Kafka',
+      'Airflow',
+      'SQL',
+      'Data Warehousing',
+      'Streaming & Batch Pipelines',
+      'ETL Design',
+    ],
+  },
+].map(group => ({ ...group, id: crypto.randomUUID() }));

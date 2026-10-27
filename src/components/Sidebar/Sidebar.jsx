@@ -1,0 +1,56 @@
+import { motion } from 'framer-motion';
+import { StyledSidebarContainer } from '../../styles/Sidebar/StyledSidebarContainer';
+import { StyledSocialList } from '../../styles/Sidebar/StyledSocialList';
+import { StyledSocialLink } from '../../styles/Sidebar/StyledSocialLink';
+import LinkedInSVG from '/src/assets/icons/linkedin.svg';
+import MailSVG from '/src/assets/icons/mail.svg';
+import { socialIconVariants, socialListVariants } from '../../utils/animations';
+import { useReducedMotion } from 'framer-motion';
+import { useGlobalContext } from '../../Context/Context';
+
+const Sidebar = () => {
+  const { atBottom } = useGlobalContext();
+
+  const shouldReduceMotion = useReducedMotion();
+  return (
+    <StyledSidebarContainer
+      atBottom={atBottom}
+      initial={shouldReduceMotion ? 'noMotion' : 'hidden'}
+      animate='visible'
+      variants={socialListVariants}
+    >
+      <StyledSocialList>
+        <StyledSocialLink atBottom={atBottom}>
+          <motion.a
+            initial='hidden'
+            whileHover='visible'
+            animate='hidden'
+            variants={socialIconVariants}
+            href='https://www.linkedin.com/in/daiki-yamamoto-7a7835432/'
+            aria-label='LinkedIn'
+            target='_blank'
+            rel='noreferrer noopener'
+          >
+            <LinkedInSVG />
+          </motion.a>
+        </StyledSocialLink>
+        <StyledSocialLink atBottom={atBottom}>
+          <motion.a
+            initial='hidden'
+            whileHover='visible'
+            animate='hidden'
+            variants={socialIconVariants}
+            href='mailto:yamamotodaiki760@gmail.com'
+            aria-label='Gmail'
+            target='_blank'
+            rel='noreferrer noopener'
+          >
+            <MailSVG />
+          </motion.a>
+        </StyledSocialLink>
+      </StyledSocialList>
+    </StyledSidebarContainer>
+  );
+};
+
+export default Sidebar;
