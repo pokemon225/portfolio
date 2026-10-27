@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="icon"
       type="image/svg+xml"
@@ -13,23 +14,110 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Zen+Kurenaido&display=swap"
       rel="stylesheet"
     />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Primary SEO -->
+    <title>Daiki Yamamoto • Machine Learning Engineer</title>
     <meta
       name="description"
       content="Daiki Yamamoto, Senior Machine Learning Engineer in Tokyo. 9+ years building production ML: real-time inference, recommendation and bidding systems, LLM agents, and MLOps platforms."
     />
-    <title>Daiki Yamamoto • Machine Learning Engineer</title>
+    <meta name="author" content="Daiki Yamamoto" />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
     <link rel="canonical" href="https://yamamotodaiki.com/" />
-    <meta property="og:type" content="website" />
+    <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
+    <meta name="theme-color" content="#fbf3e2" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#283e51" media="(prefers-color-scheme: dark)" />
+
+    <!-- Open Graph (LinkedIn, Slack, Facebook, etc.) -->
+    <meta property="og:type" content="profile" />
+    <meta property="og:site_name" content="Daiki Yamamoto" />
     <meta property="og:url" content="https://yamamotodaiki.com/" />
     <meta property="og:title" content="Daiki Yamamoto • Machine Learning Engineer" />
     <meta
       property="og:description"
       content="Senior Machine Learning Engineer in Tokyo. 9+ years building production ML: real-time inference, recommendation and bidding systems, LLM agents, and MLOps platforms."
     />
+    <meta property="og:image" content="https://yamamotodaiki.com/og-image.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta
+      property="og:image:alt"
+      content="Daiki Yamamoto, Senior Machine Learning Engineer, Tokyo"
+    />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:locale:alternate" content="ja_JP" />
+    <meta property="profile:first_name" content="Daiki" />
+    <meta property="profile:last_name" content="Yamamoto" />
+
+    <!-- X / Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Daiki Yamamoto • Machine Learning Engineer" />
+    <meta
+      name="twitter:description"
+      content="Senior Machine Learning Engineer in Tokyo building production ML, LLM agents, and MLOps platforms."
+    />
+    <meta name="twitter:image" content="https://yamamotodaiki.com/og-image.jpg" />
+
+    <!-- Structured data: helps Google understand who this site is about -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ProfilePage",
+        "url": "https://yamamotodaiki.com/",
+        "name": "Daiki Yamamoto • Machine Learning Engineer",
+        "inLanguage": ["en", "ja"],
+        "mainEntity": {
+          "@type": "Person",
+          "@id": "https://yamamotodaiki.com/#person",
+          "name": "Daiki Yamamoto",
+          "jobTitle": "Senior Machine Learning Engineer",
+          "url": "https://yamamotodaiki.com/",
+          "image": "https://yamamotodaiki.com/rasters/daiki-yamamoto.webp",
+          "email": "mailto:yamamotodaiki760@gmail.com",
+          "sameAs": ["https://www.linkedin.com/in/daiki-yamamoto-7a7835432/"],
+          "worksFor": { "@type": "Organization", "name": "CyberAgent, Inc." },
+          "alumniOf": { "@type": "CollegeOrUniversity", "name": "Tokyo University" },
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Tokyo",
+            "addressCountry": "JP"
+          },
+          "knowsLanguage": ["ja", "en"],
+          "knowsAbout": [
+            "Machine Learning",
+            "MLOps",
+            "Recommendation Systems",
+            "Real-Time Inference",
+            "Large Language Models",
+            "Retrieval-Augmented Generation",
+            "AI Agents",
+            "Natural Language Processing",
+            "Computer Vision",
+            "Kubernetes"
+          ]
+        }
+      }
+    </script>
   </head>
   <body>
     <div id="root"></div>
+    <!-- Shown to visitors and crawlers that don't run JavaScript -->
+    <noscript>
+      <h1>Daiki Yamamoto, Senior Machine Learning Engineer</h1>
+      <p>
+        Senior Machine Learning Engineer based in Tokyo with 9+ years of
+        experience designing, deploying, and scaling production machine
+        learning: real-time inference, recommendation and bidding systems, LLM
+        agents, and MLOps platforms.
+      </p>
+      <ul>
+        <li><a href="/Daiki-Yamamoto-Resume.pdf">Resume (PDF)</a></li>
+        <li>
+          <a href="https://www.linkedin.com/in/daiki-yamamoto-7a7835432/">LinkedIn</a>
+        </li>
+        <li><a href="mailto:yamamotodaiki760@gmail.com">yamamotodaiki760@gmail.com</a></li>
+      </ul>
+    </noscript>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>

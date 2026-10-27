@@ -26,7 +26,7 @@ export const AppProvider = ({ children }) => {
   const toggleMoreProjects = () => {
     setShowMoreProjects(!showMoreProjects);
   };
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
 
   // For handling whether the user has scrolled to bottom of page - changes sidebar color
   const handleScroll = () => {
@@ -50,10 +50,11 @@ export const AppProvider = ({ children }) => {
     };
   }, []);
 
-  // Changes the document title based on the language selected
+  // Changes the document title and <html lang> based on the language selected
   useEffect(() => {
     document.title = t('app-title');
-  }, [t]);
+    document.documentElement.lang = i18n.resolvedLanguage || 'en';
+  }, [t, i18n.resolvedLanguage]);
 
   // Light/Dark theme toggler
   const toggleTheme = () => {
