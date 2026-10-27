@@ -1,13 +1,11 @@
 import { useEffect, useRef } from 'react';
 import { useReducedMotion } from 'framer-motion';
 import { StyledSakuraCanvas } from '../../styles/UI/StyledSakuraCanvas';
+import { drawPetal, random, randomPetalColor } from '../../utils/sakura';
 
-const PETAL_COLORS = ['#f8c3d4', '#f4a7bf', '#fbd9e3', '#ee93b0'];
 const MAX_PETALS = 90;
 // Cursor distance (px) between spawned petals
 const SPAWN_DISTANCE = 14;
-
-const random = (min, max) => Math.random() * (max - min) + min;
 
 const createPetal = (x, y, dx, dy) => ({
   x,
@@ -21,30 +19,10 @@ const createPetal = (x, y, dx, dy) => ({
   swayPhase: random(0, Math.PI * 2),
   // Squash factor gives the illusion of the petal tumbling in 3D
   flipSpeed: random(0.03, 0.08),
-  color: PETAL_COLORS[Math.floor(Math.random() * PETAL_COLORS.length)],
+  color: randomPetalColor(),
   age: 0,
   lifespan: random(90, 150),
 });
-
-// Sakura petal: rounded body with the characteristic notch at the tip
-const drawPetal = (ctx, petal) => {
-  const s = petal.size;
-  const flip = Math.abs(Math.cos(petal.age * petal.flipSpeed));
-  ctx.save();
-  ctx.translate(petal.x, petal.y);
-  ctx.rotate(petal.rotation);
-  ctx.scale(0.35 + flip * 0.65, 1);
-  ctx.globalAlpha = Math.max(0, 1 - petal.age / petal.lifespan) * 0.9;
-  ctx.fillStyle = petal.color;
-  ctx.beginPath();
-  ctx.moveTo(0, s);
-  ctx.bezierCurveTo(-s * 0.9, s * 0.4, -s * 0.75, -s * 0.6, -s * 0.18, -s * 0.9);
-  ctx.lineTo(0, -s * 0.62);
-  ctx.lineTo(s * 0.18, -s * 0.9);
-  ctx.bezierCurveTo(s * 0.75, -s * 0.6, s * 0.9, s * 0.4, 0, s);
-  ctx.fill();
-  ctx.restore();
-};
 
 const SakuraTrail = () => {
   const canvasRef = useRef(null);
@@ -83,7 +61,12 @@ const SakuraTrail = () => {
         if (petal.age >= petal.lifespan) {
           petals.splice(i, 1);
         } else {
-          drawPetal(ctx, petal);
+          drawPetal(
+            ctx,
+            petal,
+            Math.abs(Math.cos(petal.age * petal.flipSpeed)),
+            Math.max(0, 1 - petal.age / petal.lifespan) * 0.9
+          );
         }
       }
       // Stop the loop once every petal has faded; mouse movement restarts it

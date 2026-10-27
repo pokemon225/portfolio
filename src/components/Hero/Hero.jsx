@@ -1,4 +1,5 @@
 import HeroBackground from './HeroBackground';
+import FallingPetals from './FallingPetals';
 import {
   StyledHeroContainer,
   StyledHeroSection,
@@ -40,6 +41,7 @@ const Hero = () => {
       <StyledHeroSectionBackdrop>
         <StyledHeroSection>
           <HeroBackground />
+          <FallingPetals />
           <StyledHeroContainer>
             {/* This motion.div is necessary for a smooth transition between language button clicks */}
             <motion.div
