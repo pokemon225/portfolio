@@ -2,6 +2,7 @@ import { motion } from 'framer-motion';
 import { StyledSidebarContainer } from '../../styles/Sidebar/StyledSidebarContainer';
 import { StyledSocialList } from '../../styles/Sidebar/StyledSocialList';
 import { StyledSocialLink } from '../../styles/Sidebar/StyledSocialLink';
+import GitHubSVG from '/src/assets/icons/github.svg';
 import LinkedInSVG from '/src/assets/icons/linkedin.svg';
 import MailSVG from '/src/assets/icons/mail.svg';
 import { socialIconVariants, socialListVariants } from '../../utils/animations';
@@ -20,6 +21,20 @@ const Sidebar = () => {
       variants={socialListVariants}
     >
       <StyledSocialList>
+        <StyledSocialLink atBottom={atBottom}>
+          <motion.a
+            initial='hidden'
+            whileHover='visible'
+            animate='hidden'
+            variants={socialIconVariants}
+            href='https://github.com/pokemon225'
+            aria-label='GitHub'
+            target='_blank'
+            rel='noreferrer noopener'
+          >
+            <GitHubSVG />
+          </motion.a>
+        </StyledSocialLink>
         <StyledSocialLink atBottom={atBottom}>
           <motion.a
             initial='hidden'
