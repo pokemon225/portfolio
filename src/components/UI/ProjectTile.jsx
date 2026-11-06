@@ -1,7 +1,8 @@
 import { StyledProjectTile } from '../../styles/UI/StyledProjectTile';
 
 // Shows the project screenshot when there is one, otherwise a generated tile.
-const ProjectTile = ({ project, mobile = true }) => {
+// `details` is the translated project entry (title, label, category).
+const ProjectTile = ({ project, details, mobile = true }) => {
   if (project.imageUrl) {
     return (
       <picture>
@@ -17,7 +18,7 @@ const ProjectTile = ({ project, mobile = true }) => {
             media='(max-width: 768px)'
           />
         )}
-        <img src={project.imageUrl} alt={project.title} />
+        <img src={project.imageUrl} alt={details.title} />
       </picture>
     );
   }
@@ -26,10 +27,10 @@ const ProjectTile = ({ project, mobile = true }) => {
     <StyledProjectTile
       className='project-tile'
       role='img'
-      aria-label={project.title}
+      aria-label={details.title}
     >
-      <small>{project.category}</small>
-      <strong>{project.label}</strong>
+      <small>{details.category}</small>
+      <strong>{details.label}</strong>
     </StyledProjectTile>
   );
 };

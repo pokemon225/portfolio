@@ -14,9 +14,11 @@ import { useState } from 'react';
 import { useRef } from 'react';
 import { Fragment } from 'react';
 import { useTranslation } from 'react-i18next';
+import { useTechName } from '../../utils/useTechName';
 
 const GalleryItem = ({ project, details }) => {
   const { t } = useTranslation();
+  const techName = useTechName();
   const [isCardOpened, setIsCardOpened] = useState(false);
   const [cardDimensions, setCardDimensions] = useState({ width: 0, height: 0 });
   const card = useRef(null);
@@ -40,7 +42,7 @@ const GalleryItem = ({ project, details }) => {
         layout
       >
         <StyledCardHeader isCardOpened={isCardOpened} layout='position'>
-          <h4 title={project.title}>{project.title}</h4>
+          <h4 title={details.title}>{details.title}</h4>
           <button
             onClick={() => {
               setIsCardOpened(true);
@@ -58,14 +60,14 @@ const GalleryItem = ({ project, details }) => {
           </button>
         </StyledCardHeader>
         <StyledThumbnail layout='scale' isCardOpened={isCardOpened}>
-          <ProjectTile project={project} mobile={false} />
+          <ProjectTile project={project} details={details} mobile={false} />
         </StyledThumbnail>
         {isCardOpened && (
           <StyledOpenContainer>
             <StyledOpenTitleContainer>
               <div>
                 <span>{details.period}</span>
-                <h3 title={project.title}>{project.title}</h3>
+                <h3 title={details.title}>{details.title}</h3>
               </div>
               <ProjectLinks project={project} />
             </StyledOpenTitleContainer>
@@ -81,7 +83,7 @@ const GalleryItem = ({ project, details }) => {
               </StyledHighlights>
               <ul>
                 {project.technologies.map(tech => {
-                  return <li key={tech}>{tech}</li>;
+                  return <li key={tech}>{techName(tech)}</li>;
                 })}
               </ul>
             </StyledOpenCardDescription>

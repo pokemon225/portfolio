@@ -17,10 +17,12 @@ import {
 } from '../../utils/animations';
 import { useReducedMotion } from 'framer-motion';
 import { useGlobalContext } from '../../Context/Context';
+import { useTechName } from '../../utils/useTechName';
 
 const Project = ({ project, details, alternate }) => {
   const { theme } = useGlobalContext();
   const shouldReduceMotion = useReducedMotion();
+  const techName = useTechName();
   return (
     <StyledProjectItem
       initial={shouldReduceMotion ? 'noMotion' : 'hidden'}
@@ -34,13 +36,13 @@ const Project = ({ project, details, alternate }) => {
     >
       <StyledProjectImage pageTheme={theme} alternate={alternate}>
         <StyledProjectImageContainer>
-          <ProjectTile project={project} />
+          <ProjectTile project={project} details={details} />
         </StyledProjectImageContainer>
       </StyledProjectImage>
       <StyledProjectContent alternate={alternate}>
         <StyledProjectContentBorder alternate={alternate}>
           <span>{details.period}</span>
-          <h3 title={project.title}>{project.title}</h3>
+          <h3 title={details.title}>{details.title}</h3>
           <StyledProjectDescriptionContainer>
             <p>{details.description}</p>
             <StyledHighlights>
@@ -51,7 +53,7 @@ const Project = ({ project, details, alternate }) => {
           </StyledProjectDescriptionContainer>
           <ul>
             {project.technologies.map(tech => {
-              return <li key={tech}>{tech}</li>;
+              return <li key={tech}>{techName(tech)}</li>;
             })}
           </ul>
           <div>

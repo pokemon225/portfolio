@@ -55,10 +55,14 @@
     "cloud": "Cloud Platforms",
     "data": "Data Engineering"
   },
+  "tech-names": {},
   "projects-heading": "projects",
   "projects": [
     {
       "id": 1,
+      "title": "Real-Time Bidding Platform",
+      "label": "RTB",
+      "category": "Internet Ad · RTB",
       "period": "2023 – Present",
       "description": "Led backend development for an internet advertising stack, architecting real-time bidding infrastructure that sustains tens of millions of daily ad impressions within strict low-latency SLAs, a core layer of an integrated AI solution for digital marketing.",
       "highlights": [
@@ -68,6 +72,9 @@
     },
     {
       "id": 2,
+      "title": "Ad Performance & Bid ML Platform",
+      "label": "Ad ML",
+      "category": "AI · Ad Performance",
       "period": "2023 – Present",
       "description": "Built and operated ML platforms for ad performance prediction and bid optimization, enabling sub-10ms online inference for CTR/CVR models at scale. Supports AI-driven marketing workflows, from performance forecasting to automated model lifecycle management via MLOps.",
       "highlights": [
@@ -77,6 +84,9 @@
     },
     {
       "id": 3,
+      "title": "AI Agent Platform",
+      "label": "AI Agents",
+      "category": "AI · Agent Platform",
       "period": "2023 – Present",
       "description": "Contributed to an AI agent platform that lets businesses build, test, and deploy autonomous and workflow-based AI agents tailored to their operations. Supported production infrastructure for agent orchestration, evaluation pipelines, and reliable deployment of client-specific AI workflows.",
       "highlights": [
@@ -86,6 +96,9 @@
     },
     {
       "id": 4,
+      "title": "Nuclear Regulatory Compliance Agent",
+      "label": "Compliance RAG",
+      "category": "AI / LLM · Nuclear · Compliance",
       "period": "8-week engagement",
       "description": "Delivered a retrieval-augmented compliance agent for the nuclear domain, replacing a manual, engineer-hours-intensive review of reactor design basis documentation against NRC regulations and industry codes. The system maps each design parameter to the applicable regulatory clause and returns auditable determinations with direct citations, deployed on-premise to meet data-sensitivity constraints.",
       "highlights": [
@@ -95,6 +108,9 @@
     },
     {
       "id": 5,
+      "title": "Real-Time Data Ingestion Pipeline",
+      "label": "Streaming",
+      "category": "Data · ML Pipeline",
       "period": "2023",
       "description": "Re-architected a digital marketing data ingestion pipeline, cutting processing latency by 55% across batch and streaming workloads and improving data freshness for downstream AI modeling and analytics.",
       "highlights": [
@@ -104,6 +120,9 @@
     },
     {
       "id": 6,
+      "title": "Kubernetes Cloud Migration",
+      "label": "Kubernetes",
+      "category": "Cloud · Infrastructure",
       "period": "2023 – 2024",
       "description": "Drove the migration from on-premise infrastructure to a Kubernetes-based cloud architecture, establishing a scalable, containerized platform for data-intensive ML workloads with improved deployment velocity and observability.",
       "highlights": [
@@ -113,6 +132,9 @@
     },
     {
       "id": 7,
+      "title": "Bilingual Business NLP",
+      "label": "Bilingual NLP",
+      "category": "NLP · Translation",
       "period": "2020 – 2023",
       "description": "Developed NLP models supporting bilingual Japanese–English business communication and translation, enabling smooth collaboration between international clients and their Japanese partners.",
       "highlights": [
@@ -122,6 +144,9 @@
     },
     {
       "id": 8,
+      "title": "Intelligent Document Processing",
+      "label": "Document AI",
+      "category": "OCR · NLP · Compliance",
       "period": "2020 – 2023",
       "description": "Designed intelligent document processing systems combining OCR and NLP to automate corporate incorporation documentation and regulatory compliance workflows.",
       "highlights": [
@@ -131,6 +156,9 @@
     },
     {
       "id": 9,
+      "title": "Back-Office Automation Pipelines",
+      "label": "Automation",
+      "category": "ML Pipelines · Enterprise",
       "period": "2020 – 2023",
       "description": "Built ML pipelines that automated accounting coordination, payroll administration, and bookkeeping for enterprise clients, reducing manual workload and improving accuracy.",
       "highlights": [
@@ -140,6 +168,9 @@
     },
     {
       "id": 10,
+      "title": "Support Chatbot & Routing",
+      "label": "Chatbot",
+      "category": "NLP · Customer Support",
       "period": "2020 – 2023",
       "description": "Deployed chatbot and intelligent routing solutions for online customer support, improving response times and client satisfaction.",
       "highlights": [
@@ -149,6 +180,9 @@
     },
     {
       "id": 11,
+      "title": "Banking & POS Predictive Analytics",
+      "label": "Analytics",
+      "category": "Fintech · Retail",
       "period": "2017 – 2020",
       "description": "Built predictive analytics features for digital banking and point-of-sale platforms that contributed to a 25% increase in client retail sales.",
       "highlights": [
@@ -158,6 +192,9 @@
     },
     {
       "id": 12,
+      "title": "AI-Enabled IoT Printer Monitoring",
+      "label": "IoT",
+      "category": "IoT · Predictive Maintenance",
       "period": "2017 – 2020",
       "description": "Enhanced an IoT platform with AI capabilities for real-time printer monitoring and automated consumables replenishment.",
       "highlights": [
@@ -167,6 +204,9 @@
     },
     {
       "id": 13,
+      "title": "Industry ML Solutions",
+      "label": "Applied ML",
+      "category": "Healthcare · Energy · Agriculture",
       "period": "2017 – 2020",
       "description": "Developed machine learning models for client solutions including hospital RFID equipment tracking, energy-sector drone analytics, and AI-based agricultural monitoring, deployed on AWS, Azure, and GCP for enterprise and mid-market clients.",
       "highlights": [

@@ -36,12 +36,12 @@
   "education": [
     {
       "role": "コンピュータサイエンス修士",
-      "company": "Tokyo University",
+      "company": "東京大学",
       "period": "2016 – 2017"
     },
     {
       "role": "コンピュータサイエンス学士",
-      "company": "Tokyo University",
+      "company": "東京大学",
       "period": "2012 – 2016"
     }
   ],
@@ -55,10 +55,52 @@
     "cloud": "クラウド",
     "data": "データエンジニアリング"
   },
+  "tech-names": {
+    "Recommendation Systems": "レコメンドシステム",
+    "Learning-to-Rank": "ランキング学習（LTR）",
+    "Demand Forecasting": "需要予測",
+    "Dynamic Pricing": "ダイナミックプライシング",
+    "Customer Behavior Modeling": "顧客行動モデリング",
+    "Anomaly & Fraud Detection": "異常検知・不正検知",
+    "Natural Language Processing": "自然言語処理",
+    "LLMs & RAG": "LLM・RAG",
+    "Computer Vision": "コンピュータビジョン",
+    "OCR & Document Processing": "OCR・文書処理",
+    "Predictive Analytics": "予測分析",
+    "Autonomous & Workflow Agents": "自律型・ワークフロー型エージェント",
+    "Agent Orchestration": "エージェントオーケストレーション",
+    "Tool Calling": "ツール呼び出し",
+    "Retrieval-Augmented Generation": "検索拡張生成（RAG）",
+    "Vector Search": "ベクトル検索",
+    "Citation-Grounded Answers": "出典付き回答生成",
+    "Agent Evaluation Pipelines": "エージェント評価パイプライン",
+    "Prompt Engineering": "プロンプトエンジニアリング",
+    "On-Premise LLM Deployment": "オンプレミスLLM導入",
+    "Model Registry & Versioning": "モデルレジストリ・バージョン管理",
+    "Automated Retraining": "自動再学習",
+    "A/B Testing": "A/Bテスト",
+    "Monitoring & Drift Detection": "モニタリング・ドリフト検知",
+    "CI/CD for ML": "ML向けCI/CD",
+    "Low-Latency Inference": "低レイテンシ推論",
+    "REST & gRPC": "REST・gRPC",
+    "Microservices": "マイクロサービス",
+    "Data Warehousing": "データウェアハウス",
+    "Streaming & Batch Pipelines": "ストリーミング・バッチパイプライン",
+    "ETL Design": "ETL設計",
+    "Feature Stores": "フィーチャーストア",
+    "Model Serving": "モデルサービング",
+    "Workflow Agents": "ワークフロー型エージェント",
+    "On-Premise": "オンプレミス",
+    "Time-Series Models": "時系列モデル",
+    "Anomaly Detection": "異常検知"
+  },
   "projects-heading": "プロジェクト",
   "projects": [
     {
       "id": 1,
+      "title": "リアルタイム入札（RTB）基盤",
+      "label": "RTB",
+      "category": "インターネット広告 · RTB",
       "period": "2023年 – 現在",
       "description": "インターネット広告基盤でバックエンド開発をリードし、厳しい低レイテンシSLAのもとで1日数千万件の広告インプレッションを処理するリアルタイム入札（RTB）インフラを設計しました。デジタルマーケティング向け統合AIソリューションの中核を担うレイヤーです。",
       "highlights": [
@@ -68,6 +110,9 @@
     },
     {
       "id": 2,
+      "title": "広告効果予測・入札最適化ML基盤",
+      "label": "広告ML",
+      "category": "AI · 広告効果予測",
       "period": "2023年 – 現在",
       "description": "広告効果予測と入札最適化のためのMLプラットフォームを構築・運用し、CTR/CVRモデルの10ms未満のオンライン推論を大規模に実現しました。効果予測からMLOpsによるモデルライフサイクルの自動管理まで、AIを活用したマーケティング業務を支えています。",
       "highlights": [
@@ -77,6 +122,9 @@
     },
     {
       "id": 3,
+      "title": "AIエージェントプラットフォーム",
+      "label": "AIエージェント",
+      "category": "AI · エージェント基盤",
       "period": "2023年 – 現在",
       "description": "企業が自社業務に合わせた自律型・ワークフロー型AIエージェントを構築、テスト、デプロイできるAIエージェントプラットフォームの開発に参加しました。エージェントのオーケストレーション、評価パイプライン、顧客ごとのAIワークフローの安定したデプロイを支える本番インフラを担当しました。",
       "highlights": [
@@ -86,6 +134,9 @@
     },
     {
       "id": 4,
+      "title": "原子力規制コンプライアンスエージェント",
+      "label": "規制RAG",
+      "category": "AI / LLM · 原子力 · コンプライアンス",
       "period": "8週間のプロジェクト",
       "description": "原子力分野向けに検索拡張生成（RAG）を用いたコンプライアンスエージェントを開発し、原子炉の設計基準文書をNRC規制や業界規格と照合する、エンジニアの工数を大きく要する手作業のレビューを置き換えました。設計パラメータごとに該当する規制条項を特定し、根拠となる条文を引用した監査可能な判定結果を返します。データの機密性に配慮し、オンプレミス環境に導入しました。",
       "highlights": [
@@ -95,6 +146,9 @@
     },
     {
       "id": 5,
+      "title": "リアルタイムデータ取り込みパイプライン",
+      "label": "ストリーミング",
+      "category": "データ · MLパイプライン",
       "period": "2023年",
       "description": "デジタルマーケティング向けデータ取り込みパイプラインを再設計し、バッチ・ストリーミング双方で処理レイテンシを55%削減。下流のAIモデリングや分析に使うデータの鮮度を高めました。",
       "highlights": [
@@ -104,6 +158,9 @@
     },
     {
       "id": 6,
+      "title": "Kubernetesクラウド移行",
+      "label": "Kubernetes",
+      "category": "クラウド · インフラ",
       "period": "2023年 – 2024年",
       "description": "オンプレミス環境からKubernetesベースのクラウドアーキテクチャへの移行を推進し、データ量の多いMLワークロード向けのスケーラブルなコンテナ基盤を構築。デプロイ速度とオブザーバビリティを向上させました。",
       "highlights": [
@@ -113,6 +170,9 @@
     },
     {
       "id": 7,
+      "title": "日英バイリンガル ビジネスNLP",
+      "label": "日英NLP",
+      "category": "NLP · 翻訳",
       "period": "2020年 – 2023年",
       "description": "日英バイリンガルのビジネスコミュニケーションと翻訳を支えるNLPモデルを開発し、海外クライアントと日本のパートナー企業との円滑な協業を実現しました。",
       "highlights": [
@@ -122,6 +182,9 @@
     },
     {
       "id": 8,
+      "title": "インテリジェント文書処理",
+      "label": "文書AI",
+      "category": "OCR · NLP · コンプライアンス",
       "period": "2020年 – 2023年",
       "description": "OCRとNLPを組み合わせたインテリジェントな文書処理システムを設計し、法人設立書類の作成や規制コンプライアンス業務を自動化しました。",
       "highlights": [
@@ -131,6 +194,9 @@
     },
     {
       "id": 9,
+      "title": "バックオフィス業務自動化パイプライン",
+      "label": "業務自動化",
+      "category": "MLパイプライン · エンタープライズ",
       "period": "2020年 – 2023年",
       "description": "企業クライアント向けに、経理調整、給与計算、記帳業務を自動化するMLパイプラインを構築し、手作業の削減と精度向上を実現しました。",
       "highlights": [
@@ -140,6 +206,9 @@
     },
     {
       "id": 10,
+      "title": "サポートチャットボット・自動振り分け",
+      "label": "チャットボット",
+      "category": "NLP · カスタマーサポート",
       "period": "2020年 – 2023年",
       "description": "オンラインカスタマーサポート向けにチャットボットとインテリジェントルーティングを導入し、応答時間と顧客満足度を改善しました。",
       "highlights": [
@@ -149,6 +218,9 @@
     },
     {
       "id": 11,
+      "title": "銀行・POS向け予測分析",
+      "label": "予測分析",
+      "category": "フィンテック · 小売",
       "period": "2017年 – 2020年",
       "description": "デジタルバンキングとPOSプラットフォーム向けの予測分析機能を構築し、クライアントの小売売上25%増加に貢献しました。",
       "highlights": [
@@ -158,6 +230,9 @@
     },
     {
       "id": 12,
+      "title": "AI搭載IoTプリンター監視",
+      "label": "IoT",
+      "category": "IoT · 予知保全",
       "period": "2017年 – 2020年",
       "description": "IoTプラットフォームにAI機能を追加し、プリンターのリアルタイム監視と消耗品の自動補充を実現しました。",
       "highlights": [
@@ -167,6 +242,9 @@
     },
     {
       "id": 13,
+      "title": "業界別MLソリューション",
+      "label": "応用ML",
+      "category": "医療 · エネルギー · 農業",
       "period": "2017年 – 2020年",
       "description": "病院のRFID医療機器トラッキング、エネルギー分野のドローン解析、AIによる農業モニタリングなど、クライアント向けソリューションの機械学習モデルを開発し、AWS、Azure、GCP上で大企業・中堅企業に提供しました。",
       "highlights": [
