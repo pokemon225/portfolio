@@ -3,7 +3,12 @@
 {
   "name": "portfolio",
   "compatibility_date": "2026-10-01",
+  // Logs page visits to a Google Sheet (see README "Visitor log")
+  "main": "worker/index.js",
   "assets": {
-    "directory": "./dist"
+    "directory": "./dist",
+    "binding": "ASSETS",
+    // Run the Worker before serving files, so page visits can be logged
+    "run_worker_first": true
   }
 }
