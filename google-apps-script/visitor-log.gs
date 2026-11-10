@@ -34,10 +34,28 @@ const safe = value => {
 
 function doPost(e) {
   const data = JSON.parse(e.postData.contents);
-  if (data.token !== TOKEN) {
+  if (String(data.token).trim() !== TOKEN.trim()) {
     return ContentService.createTextOutput('forbidden');
   }
+  appendVisit(data);
+  return ContentService.createTextOutput('ok');
+}
 
+// Select this function in the editor's toolbar and click Run to check that
+// the script can write to this sheet (adds one test row).
+function testSetup() {
+  appendVisit({
+    time: new Date().toISOString(),
+    ip: 'TEST - setup check (delete this row)',
+    city: 'Tokyo',
+    country: 'JP',
+    page: '/',
+    bot: false,
+    userAgent: 'testSetup',
+  });
+}
+
+function appendVisit(data) {
   // Several visits can arrive at once; append one at a time
   const lock = LockService.getScriptLock();
   lock.waitLock(10000);
@@ -67,5 +85,4 @@ function doPost(e) {
   } finally {
     lock.releaseLock();
   }
-  return ContentService.createTextOutput('ok');
 }
