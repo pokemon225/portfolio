@@ -44,8 +44,8 @@ export const StyledThumbnail = styled.div`
     width: 100%;
     height: 100%;
     max-height: 100%;
+    /* Crop the 31:20 covers to the card shape instead of stretching them */
     object-fit: cover;
-    object-fit: fill;
     border-radius: 0.2rem;
   }
 `;
