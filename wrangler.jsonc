@@ -5,6 +5,8 @@
   "compatibility_date": "2026-10-01",
   // Logs page visits to a Google Sheet (see README "Visitor log")
   "main": "worker/index.js",
+  // Keep Worker logs in the dashboard (Logs tab) for troubleshooting
+  "observability": { "enabled": true },
   "assets": {
     "directory": "./dist",
     "binding": "ASSETS",

@@ -45,8 +45,21 @@ const logVisit = (request, env) => {
 export default {
   async fetch(request, env, ctx) {
     const response = await env.ASSETS.fetch(request);
-    if (env.VISITOR_LOG_URL && env.VISITOR_LOG_TOKEN && isPageView(request)) {
-      ctx.waitUntil(logVisit(request, env).catch(() => {}));
+    if (isPageView(request)) {
+      if (!env.VISITOR_LOG_URL || !env.VISITOR_LOG_TOKEN) {
+        // Shows in Cloudflare → Workers & Pages → portfolio → Logs
+        console.log('visitor log: VISITOR_LOG_URL / VISITOR_LOG_TOKEN not set');
+      } else {
+        ctx.waitUntil(
+          logVisit(request, env)
+            .then(res => {
+              if (res.status >= 400) {
+                console.log(`visitor log: sheet answered ${res.status}`);
+              }
+            })
+            .catch(err => console.log(`visitor log failed: ${err.message}`))
+        );
+      }
     }
     return response;
   },
