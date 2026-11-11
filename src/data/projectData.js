@@ -5,6 +5,44 @@
 // livelink are optional; without imageUrl a card shows a generated tile
 // (showing label), and missing links are hidden.
 export const projectData = [
+  // Live products first: these fill the featured slots (CONSTANTS.FEATURED_PROJECT_CUTOFF)
+  {
+    id: crypto.randomUUID(),
+    imageUrl: '/rasters/projects/healmind.webp',
+    livelink: 'https://www.iasona.com/',
+    technologies: ['React', 'Vite', 'Tavus CVI', 'Daily (WebRTC)', 'Sentry'],
+  },
+  {
+    id: crypto.randomUUID(),
+    imageUrl: '/rasters/projects/filter-coop.webp',
+    livelink: 'https://turf-troop.com/',
+    technologies: ['Next.js', 'PostgreSQL', 'Stripe', 'Mapbox', 'Twilio'],
+  },
+  {
+    id: crypto.randomUUID(),
+    imageUrl: '/rasters/projects/knowlchemy.webp',
+    livelink: 'https://www.knowlchemy.com/',
+    technologies: [
+      'RAG',
+      'OpenAI / Claude',
+      'FastAPI',
+      'ChromaDB',
+      'Next.js',
+      'MCP',
+    ],
+  },
+  {
+    id: crypto.randomUUID(),
+    imageUrl: '/rasters/projects/slop-duels.webp',
+    livelink: 'https://slopduels.com/',
+    technologies: ['Python', 'FastAPI', 'Replicate', 'Generative Video', 'Cloudflare'],
+  },
+  // Radiant Claims: domain has lapsed, so no live link for now
+  {
+    id: crypto.randomUUID(),
+    imageUrl: '/rasters/projects/radiant-claims.webp',
+    technologies: ['AI Agents', 'OCR', 'Next.js', 'TypeScript', 'PostgreSQL'],
+  },
   {
     id: crypto.randomUUID(),
     imageUrl: '/rasters/projects/rtb.webp',

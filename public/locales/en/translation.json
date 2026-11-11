@@ -8,9 +8,9 @@
   "more-info": "I'm a Senior Machine Learning Engineer based in Tokyo with 9+ years of experience designing, deploying, and scaling production ML: real-time inference, recommendation and bidding systems, and the MLOps platforms that keep models performing.",
   "resume-btn": "resume",
   "about-heading": "about me",
-  "about-text-top": "I'm Daiki, a senior AI/ML engineer at CyberAgent in Tokyo. I've spent 9+ years building production machine learning for e-commerce, fintech, and enterprise services, from high-throughput recommendation and real-time inference infrastructure to the feature stores, retraining pipelines, and A/B testing frameworks that keep models healthy after launch.",
+  "about-text-top": "I'm Daiki, a senior AI/ML engineer with 9+ years of experience designing, deploying, and scaling production machine learning systems for e-commerce, fintech, and enterprise services. I build high-throughput recommendation and real-time inference infrastructure, establish the MLOps practices that keep models performing in production, and deliver NLP and computer vision solutions that drive revenue and operational efficiency.",
   "portrait-alt": "Portrait of Daiki Yamamoto",
-  "about-text-bottom": "Before CyberAgent, I built bilingual NLP, document-intelligence, and automation systems at Embarc, and delivered ML solutions across healthcare, energy, agriculture, banking, and retail at Computools. I work fluently in Japanese and English, and I enjoy leading cross-functional teams and mentoring engineers through their first production ML deployments.",
+  "about-text-bottom": "At CyberAgent in Tokyo, I work across ad-tech ML, real-time bidding, and AI agent platforms. I work fluently in Japanese and English, and I enjoy leading cross-functional teams and mentoring engineers through their first production ML deployments.",
   "experience-heading": "experience",
   "education-heading": "education",
   "experience": [
@@ -18,19 +18,41 @@
       "role": "Senior AI/ML Engineer",
       "company": "CyberAgent, Inc.",
       "location": "Tokyo",
-      "period": "Sep 2023 – Present"
+      "period": "Sep 2023 – Present",
+      "highlights": [
+        "Architected recommendation infrastructure serving hundreds of millions of daily user interactions within sub-10ms latency targets, improving personalization and conversion",
+        "Built ML platforms for demand forecasting, dynamic pricing, and customer behavior prediction",
+        "Established end-to-end MLOps: feature stores, automated retraining, A/B testing, and model versioning",
+        "Delivered NLP and computer vision for product catalog enrichment, search relevance, and fraud detection across regional markets",
+        "Cut core data pipeline latency by 55% and led the migration of ML workloads to Kubernetes on AWS",
+        "Mentored junior engineers through their first production ML deployments"
+      ]
     },
     {
       "role": "Machine Learning Engineer",
       "company": "Embarc",
       "location": "Yokohama",
-      "period": "Jun 2020 – Sep 2023"
+      "period": "Jun 2020 – Sep 2023",
+      "highlights": [
+        "Developed Japanese–English NLP models for bilingual business communication and translation",
+        "Designed OCR + NLP document processing for corporate incorporation and regulatory compliance workflows",
+        "Built ML pipelines automating accounting coordination, payroll, and bookkeeping for enterprise clients",
+        "Deployed chatbots and intelligent routing for online customer support, improving response times",
+        "Worked with operations, translation, and consulting teams to bring AI into daily business operations"
+      ]
     },
     {
       "role": "AI Engineer",
       "company": "Computools",
       "location": "Nagoya",
-      "period": "Apr 2017 – Jun 2020"
+      "period": "Apr 2017 – Jun 2020",
+      "highlights": [
+        "Built ML models for hospital RFID equipment tracking, energy-sector drone analytics, and agricultural monitoring",
+        "Built predictive analytics for digital banking and POS platforms, contributing to a 25% increase in client retail sales",
+        "Added AI to an IoT platform for real-time printer monitoring and automated consumables replenishment",
+        "Delivered cloud AI solutions on AWS, Azure, and GCP, plus AI automation for CRM and sales enablement",
+        "Worked in distributed, multinational teams delivering for global clients"
+      ]
     }
   ],
   "education": [
@@ -60,6 +82,66 @@
   "projects": [
     {
       "id": 1,
+      "title": "Healmind · AI Video Coaching",
+      "label": "Healmind",
+      "category": "AI · Conversational Video",
+      "period": "AI Engineer & Full-Stack Developer",
+      "description": "A video-first wellness app where people talk face to face with an AI integration coach. Users choose a coach avatar and, optionally, a persona grounded in its own knowledge documents, then start a timed, real-time video session. Built on Tavus conversational video replicas over Daily WebRTC, with noise-cancelled audio, screen sharing, and Sentry error tracking.",
+      "highlights": [
+        "Real-time conversational AI video with selectable coaches and personas",
+        "Timed sessions with noise-cancelled audio, screen sharing, and error tracking"
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Filter Coop · Neighborhood Group-Buying",
+      "label": "Filter Coop",
+      "category": "SaaS · Group Buying · Maps",
+      "period": "Full-Stack Developer",
+      "description": "Households pay retail for HVAC filter service because they buy alone. Filter Coop groups neighbors into local co-ops so collective volume unlocks wholesale pricing. I built the full platform: drawable Mapbox service territories, a customer interest and onboarding flow, a service-provider application track with status checking, an admin console, recurring Stripe subscription billing, and Twilio SMS for scheduling. Product analytics and error tracking were wired in from the first deploy. Operating across Utah.",
+      "highlights": [
+        "Three-sided platform for customers, service providers, and admins",
+        "Drawable Mapbox territories, Stripe subscriptions, and Twilio SMS scheduling"
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Knowlchemy · Graded RAG Platform",
+      "label": "Knowlchemy",
+      "category": "AI · RAG · LLM Orchestration",
+      "period": "Founder & AI Systems Engineer",
+      "description": "Most RAG products return whatever the vector store hands back. Knowlchemy grades its own output first. I built a five-stage pipeline (ingestion, atomization, triage, grounding, rubric scoring) that scores every response before a reader sees it, with model tiering that reserves the expensive models for hard cases to control cost and latency. RAG runs two ways in production: OpenAI embeddings over Convex vector search, and sentence-transformers over ChromaDB behind FastAPI. Multi-provider orchestration across OpenAI and Claude with fallback, plus MCP server integration.",
+      "highlights": [
+        "Five-stage pipeline that scores every answer before a reader sees it",
+        "Model tiering and OpenAI/Claude fallback to control cost and latency"
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Slop Duels · AI Video Tournaments",
+      "label": "Slop Duels",
+      "category": "Generative AI · Video · Games",
+      "period": "Full-Stack & AI Engineer",
+      "description": "A daily creative game built on generative video. A template drops with blank slots, players cast characters and write the fills, and the system renders each entry into a 20-second animated short with voices, then seeds it into a live tournament bracket where the crowd votes duels head to head. I built the generation pipeline on Replicate behind a FastAPI service, the bracket and seeding engine, a credit system that meters render cost, and TikTok distribution. Deployed edge-first on Cloudflare Pages, D1, and R2.",
+      "highlights": [
+        "Player prompts rendered into 20-second voiced animated shorts",
+        "Live bracket voting, metered render credits, and edge deployment on Cloudflare"
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Radiant Claims · 7-Agent Platform",
+      "label": "Radiant Claims",
+      "category": "AI Agents · OCR · Legal",
+      "period": "AI Engineer & Full-Stack Developer (sole builder)",
+      "description": "Families harmed by US nuclear testing must file RECA compensation claims against dense federal rules, and the DOJ backlog punishes every error. I built the platform solo: a guided eligibility wizard, separate claimant and staff portals, and seven specialized AI agents that extract entities, categorize uploaded evidence, and check each filing against current federal rules. A four-tier OCR cascade routes every page to the cheapest engine that can actually read it, cutting processing cost, and a daily DOJ scraper keeps the rule set from going stale.",
+      "highlights": [
+        "Seven AI agents for entity extraction, evidence sorting, and rule checks",
+        "Four-tier OCR cascade and a daily DOJ scraper to keep rules current"
+      ]
+    },
+    {
+      "id": 6,
       "title": "Real-Time Bidding Platform",
       "label": "RTB",
       "category": "Internet Ad · RTB",
@@ -71,7 +153,7 @@
       ]
     },
     {
-      "id": 2,
+      "id": 7,
       "title": "Ad Performance & Bid ML Platform",
       "label": "Ad ML",
       "category": "AI · Ad Performance",
@@ -83,7 +165,7 @@
       ]
     },
     {
-      "id": 3,
+      "id": 8,
       "title": "AI Agent Platform",
       "label": "AI Agents",
       "category": "AI · Agent Platform",
@@ -95,8 +177,8 @@
       ]
     },
     {
-      "id": 4,
-      "title": "Nuclear Regulatory Compliance Agent",
+      "id": 9,
+      "title": "Nuclear Compliance RAG Agent",
       "label": "Compliance RAG",
       "category": "AI / LLM · Nuclear · Compliance",
       "period": "8-week engagement",
@@ -107,7 +189,7 @@
       ]
     },
     {
-      "id": 5,
+      "id": 10,
       "title": "Real-Time Data Ingestion Pipeline",
       "label": "Streaming",
       "category": "Data · ML Pipeline",
@@ -119,7 +201,7 @@
       ]
     },
     {
-      "id": 6,
+      "id": 11,
       "title": "Kubernetes Cloud Migration",
       "label": "Kubernetes",
       "category": "Cloud · Infrastructure",
@@ -131,7 +213,7 @@
       ]
     },
     {
-      "id": 7,
+      "id": 12,
       "title": "Bilingual Business NLP",
       "label": "Bilingual NLP",
       "category": "NLP · Translation",
@@ -143,7 +225,7 @@
       ]
     },
     {
-      "id": 8,
+      "id": 13,
       "title": "Intelligent Document Processing",
       "label": "Document AI",
       "category": "OCR · NLP · Compliance",
@@ -155,7 +237,7 @@
       ]
     },
     {
-      "id": 9,
+      "id": 14,
       "title": "Back-Office Automation Pipelines",
       "label": "Automation",
       "category": "ML Pipelines · Enterprise",
@@ -167,7 +249,7 @@
       ]
     },
     {
-      "id": 10,
+      "id": 15,
       "title": "Support Chatbot & Routing",
       "label": "Chatbot",
       "category": "NLP · Customer Support",
@@ -179,7 +261,7 @@
       ]
     },
     {
-      "id": 11,
+      "id": 16,
       "title": "Banking & POS Predictive Analytics",
       "label": "Analytics",
       "category": "Fintech · Retail",
@@ -191,7 +273,7 @@
       ]
     },
     {
-      "id": 12,
+      "id": 17,
       "title": "AI-Enabled IoT Printer Monitoring",
       "label": "IoT",
       "category": "IoT · Predictive Maintenance",
@@ -203,7 +285,7 @@
       ]
     },
     {
-      "id": 13,
+      "id": 18,
       "title": "Industry ML Solutions",
       "label": "Applied ML",
       "category": "Healthcare · Energy · Agriculture",

@@ -46,6 +46,13 @@ const About = () => {
                             {entry.location && ` · ${entry.location}`}
                           </p>
                           <small>{entry.period}</small>
+                          {Array.isArray(entry.highlights) && (
+                            <ul>
+                              {entry.highlights.map(highlight => (
+                                <li key={highlight}>{highlight}</li>
+                              ))}
+                            </ul>
+                          )}
                         </li>
                       ))}
                   </ol>

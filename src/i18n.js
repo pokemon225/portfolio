@@ -15,9 +15,11 @@ i18n
       caches: ['cookie'],
     },
     backend: {
-      loadPath: '/locales/{{lng}}/translation.json',
+      // Project data and the "projects" array must match, so always fetch the
+      // translations that shipped with this build
+      loadPath: `/locales/{{lng}}/translation.json?v=${__BUILD_ID__}`,
     },
-    debug: true,
+    debug: import.meta.env.DEV,
 
     interpolation: {
       escapeValue: false,

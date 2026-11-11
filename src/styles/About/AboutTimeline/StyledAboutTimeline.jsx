@@ -37,9 +37,9 @@ export const StyledTimeline = styled.div`
       ${props => props.theme.tertiary.projectBorder};
   }
 
-  & li {
+  & ol > li {
     position: relative;
-    padding: 0 0 2rem 2.4rem;
+    padding: 0 0 2.8rem 2.4rem;
 
     &:last-child {
       padding-bottom: 0;
@@ -78,5 +78,38 @@ export const StyledTimeline = styled.div`
     letter-spacing: 0.05rem;
     color: ${props => props.theme.primary.span};
     opacity: 0.8;
+  }
+
+  /* Experience highlights under each role */
+  & ul {
+    list-style: none;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+  }
+
+  & ul li {
+    position: relative;
+    padding-left: 1.6rem;
+    font-family: ${props => props.theme.fonts.primary};
+    font-size: 1.35rem;
+    font-weight: 500;
+    line-height: 1.55;
+    color: ${props => props.theme.primary.p};
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0.85rem;
+      width: 0.7rem;
+      height: 0.2rem;
+      background-color: ${props => props.theme.tertiary.projectBorder};
+    }
+
+    @media ${props => props.theme.bp.mobileM} {
+      font-size: 1.25rem;
+    }
   }
 `;
